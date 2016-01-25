@@ -1,0 +1,8 @@
+document.getElementById("tbl2").children[1].getAttribute("id")
+function doAdd()
+{
+    var idVideo =  document.getElementById("tbl2").children[1].getAttribute("id");
+    addVisitYTBPlay(idVideo);
+    setTimeout(function(){location.reload()}, 1000);
+}
+doAdd();
