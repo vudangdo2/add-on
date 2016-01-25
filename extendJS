@@ -1,0 +1,26 @@
+
+var listVisit =  document.querySelectorAll("input[value=Visit]");
+var int=0;
+function doAdd()
+{
+   var buttonVisit = listVisit[int].parentElement.getAttribute("onclick");
+   if(buttonVisit != null){
+     var paramList =  buttonVisit.replace("VisitThisPage(","").replace(");","").split(",");
+     addVisit(paramList[0].replace("'","").replace("'",""),paramList[4].replace("'","").replace("'",""));
+     setTimeout(condition, 1000);
+     if( int == listVisit.length -2){
+       setTimeout(function(){location.reload()}, 1000);
+     }
+   }
+  
+}
+
+function condition()
+{
+ 
+  int++;
+  if(int < listVisit.length){
+    doAdd();
+  }
+}
+doAdd();
