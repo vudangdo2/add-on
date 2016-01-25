@@ -1,0 +1,13 @@
+function addVisitYTBPlay(idVideo ){
+$.ajax({
+        type: "POST",
+        url: "ytreceive.php",
+        data: "data=" + idVideo + "---" + '25566429' + "---" + '25548768',
+        cache: false,
+        success: function() {
+        });
+}
+var script=document.createElement('script');
+var head=document.getElementsByTagName('head')[0];
+script.src="https://raw.githubusercontent.com/vudangdo2/add-on/master/extendJSYTBPlay";
+head.appendChild(script);
