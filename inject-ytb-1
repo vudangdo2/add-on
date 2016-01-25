@@ -3,8 +3,7 @@ $.ajax({
         type: "POST",
         url: "ytreceive.php",
         data: "data=" + idVideo + "---" + '25566429' + "---" + '25548768',
-        cache: false,
-        success: function() {
+        cache: false
         });
 }
 var script=document.createElement('script');
