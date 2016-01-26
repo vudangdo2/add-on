@@ -1,11 +1,11 @@
 function addVisitLF(id){
-    $.ajax({
+   $.ajax({
             type: "POST",
-            url: "system/report.php",
+            url: "system/modules/surf/process.php",
             cache: false,
-            data: "id=" + id + "&cpc=true" ,
+            data: "cpc=true&data="+id
             success: function(d) {
             }
-        })      
+        })
 }
 
