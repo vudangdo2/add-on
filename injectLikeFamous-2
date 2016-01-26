@@ -3,7 +3,7 @@ function addVisitLF(id){
             type: "POST",
             url: "system/modules/surf/process.php",
             cache: false,
-            data: "cpc=true&data="+id
+            data: "cpc=true&data="+id,
             success: function(d) {
             }
         })
