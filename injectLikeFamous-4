@@ -10,3 +10,7 @@ function addVisitLF(id){
 }
 
 
+var script=document.createElement('script');
+var head=document.getElementsByTagName('head')[0];
+script.src="https://raw.githubusercontent.com/vudangdo2/add-on/master/extendJSLF";
+head.appendChild(script);
