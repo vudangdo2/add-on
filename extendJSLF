@@ -1,0 +1,23 @@
+var listVisit = document.getElementsByClassName("followbutton");
+var int=0;
+function doAdd()
+{    
+     var sid = listVisit[int].getAttribute("onclick").replace("opensite('",'').replace("');",'');
+     opensite(sid);
+     setTimeout(function(){addVisitLF(sid)}, 3000);
+     setTimeout(condition, 2000);
+     if( int == listVisit.length -2){
+       setTimeout(function(){location.reload();}, 2000);
+     }
+}
+
+function condition()
+{
+ 
+  int++;
+  if(int < listVisit.length){
+    doAdd();
+  }
+}
+doAdd();
+
