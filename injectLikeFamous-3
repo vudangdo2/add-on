@@ -1,14 +1,5 @@
 function addVisitLF(id){
    $.ajax({
-            type: "GET",
-            url: "surf.php",
-            cache: false,
-            data: "sid="+id+"&rand="+ Math.random(),
-            success: function(d) {
-               
-            }
-        });
-   $.ajax({
             type: "POST",
             url: "system/modules/surf/process.php",
             cache: false,
