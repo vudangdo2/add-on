@@ -1,0 +1,27 @@
+
+
+function addVisitLF(id){
+  var childWindow;
+    setTimeout(function(){$.ajax({
+            type: "GET",
+            url: "surf.php?sid="+id+"&rand="+Math.random()+"",
+            cache: false,
+            success: function(d) {
+               setTimeout(function(){$.ajax({
+                    type: "POST",
+                    url: "system/modules/surf/process.php",
+                    cache: false,
+                    data: "cpc=true&data="+id,
+                    success: function(d) {
+                      
+                    }
+                }); } , 3000);
+            }
+        }); } , 3000);
+  
+  
+   
+}
+
+
+
