@@ -3,10 +3,7 @@
 function addVisitLF(id){
   var childWindow;
   
-   setTimeout(function(){
-        childWindow = open(base + "/surf.php?sid=" + id + "&rand=" + Math.random(), "View");
-   } , 5000);
-   
+  
    setTimeout(function(){$.ajax({
             type: "POST",
             url: "system/modules/surf/process.php",
