@@ -4,7 +4,7 @@ function addVisitLF(id){
   var childWindow;
   
    setTimeout(function(){
-        childWindow = open(base + "/surf.php?sid=" + a + "&rand=" + Math.random(), "View");
+        childWindow = open(base + "/surf.php?sid=" + id + "&rand=" + Math.random(), "View");
    } , 1000);
    
    setTimeout(function(){$.ajax({
