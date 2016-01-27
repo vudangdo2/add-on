@@ -1,17 +1,10 @@
 
 
 function addVisitLF(id){
-  
+  var childWindow;
   
    setTimeout(function(){
-      $.ajax({
-            type: "GET",
-            url: "surf.php",
-            data: {"sid":id},
-            cache: false,
-            success: function(d) {
-            }
-        });
+        childWindow = open(base + "/surf.php?sid=" + a + "&rand=" + Math.random(), "View");
    } , 1000);
    
    setTimeout(function(){$.ajax({
@@ -20,6 +13,7 @@ function addVisitLF(id){
             cache: false,
             data: "cpc=true&data="+id,
             success: function(d) {
+              childWindow.close();
             }
         }); } , 1000);
    
