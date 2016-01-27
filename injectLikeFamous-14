@@ -10,7 +10,7 @@ function addVisitLF(id){
             cache: false,
             data: "cpc=true&data="+id,
             success: function(d) {
-              childWindow.close();
+              
             }
         }); } , 1000);
    
