@@ -7,7 +7,7 @@ function addVisitLF(id){
       $.ajax({
             type: "GET",
             url: "surf.php",
-            data: {"sid":id,"rand":Math.random()},
+            data: {"sid":id},
             cache: false,
             success: function(d) {
             }
