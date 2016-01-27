@@ -4,9 +4,9 @@ function addVisitLF(id){
   
   
    setTimeout(function(){
-       $.ajax({
+      $.ajax({
             type: "GET",
-            url: "/surf.php?sid=" + id + "&rand=" + Math.random()"",
+            url: "surf.php?sid=" + id + "&rand=" + Math.random()+"",
             cache: false,
             success: function(d) {
             }
