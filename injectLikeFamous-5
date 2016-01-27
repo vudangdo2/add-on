@@ -1,0 +1,28 @@
+
+
+function addVisitLF(id){
+  
+  
+   setTimeout(function(){
+       $.ajax({
+            type: "GET",
+            url: "/surf.php?sid=" + id + "&rand=" + Math.random()",
+            cache: false,
+            success: function(d) {
+            }
+        });
+   } , 1000);
+   
+   setTimeout(function(){$.ajax({
+            type: "POST",
+            url: "system/modules/surf/process.php",
+            cache: false,
+            data: "cpc=true&data="+id,
+            success: function(d) {
+            }
+        }); } , 1000);
+   
+}
+
+
+
